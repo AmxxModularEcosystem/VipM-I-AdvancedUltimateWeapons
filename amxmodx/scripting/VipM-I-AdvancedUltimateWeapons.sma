@@ -22,5 +22,5 @@ public VipM_IC_OnInitTypes() {
 @OnAuwWeaponGive(const UserId, const Trie:tParams) {
     static sWeaponName[64];
     VipM_Params_GetStr(tParams, "Name", sWeaponName, charsmax(sWeaponName));
-    auw_give_weapon(UserId, sWeaponName);
+    auw_give_weapon(UserId, sWeaponName, .notification = false);
 }
